@@ -1,0 +1,137 @@
+ANOTAÇÕES CURSO DE HTML/CSS
+
+SITES INTERESSANTES:
+ÍCONES PRONTOS PARA BAIXAR: https://iconarchive.com/
+ÍCONES, SE EU QUISER CRIAR MEU PRÓPRIO ÍCONE: https://www.favicon.cc/
+GERAR UM ÍCONE A PARTIR DE UMA IMAGEM OU TEXTO: https://favicon.io/
+BAIXAR FOTOS E VÍDEOS GRÁTIS(SEM DIREITOS AUTORAIS)- https://www.pexels.com/pt-br/
+
+TAG'S:
+h1 - título (h2, h3, h4, h5 e h6. Só vai até h6) - trata hierarquia de títulos dentro da página
+p - parágrafo
+hr - linha horizontal
+img src="caminho do arquivo\nome do arquivo" alt="texto alternativo"
+br - quebra de linha
+&lt; - coloca o caracter especial <
+&gt; - coloca o caracter especial > 
+&#x - esse código seguido do código referente ao emoji que quero adicionar + ;
+	  O código d emoji encontro na emojipedia.org
+link - no visual studio digita link, e na lista que aparecer escolher link:favicon. Basta clicar, e substituir o nome do arquivo, utilizando Ctrl+Espaço para abrir as sugestões de arquivos.
+	  
+*** FORMATOS DE IMAGENS ***
+JPEG - ALTA COMPACTAÇÃO, NÃO PERMITE TRANSPARÊNCIA
+PNG - COMPACTADO, PORÉM MENOS QUE O JPEG. PERMITE TRANSPARÊNCIA. MAIOR QUALIDADE.
+GIF - PERMITE ANIMAÇÃO E TRANSPARÊNCIA, MENOS COMPACTADO.
+
+*** FORMATAÇÃO DE TEXTOS ****
+/b - faz o texto em negrito
+/strong (semântica)- dá destaque ao texto, marcando em negrito
+/i - coloca o texto em itálico
+/em (semântica) - dá ênfase ao texto, colocando em itálico.
+/mark - essa TAG faz o texto marcado(como um marca texto) por padrão em amarelo.
+	obs.: se quiser uma cor diferente posso usar o parâmetro CSS style e escolhendo a cor de fundo somente dentro dessa tag.
+	Se eu quiser colocar uma cor diferente para todas as tags /mark, devo criar um seletor CSS dentro do Head. Exemplo:
+	<style>
+		mark {
+			background-color: corquevouquerer;
+		}
+	</style>
+/big - é uma tag obsoleta, porém, ainda é reconhecido no HTML5 e cria um texto um pouco maior que o da fonte dentro do /p
+/small - é uma tag obsoleta, porém, ainda é reconhecido no HTML5 e cria um texto um pouco menor que o da fonte dentro do /p
+/sup - faz o texto sobrescrito
+/sub - faz o texto ficar subescrito
+/del - faz o texto como excluído
+/ins - faz o texto como inserido
+
+*** CITAÇÕES E TRECHOS DE CÓDIGO ***
+
+<code> - essa TAG formata com fonte monoespaçada para melhor visualização um trecho de código por exemplo: documento.getElementById('teste')
+<pre> - serve para envelopar a TAG code, que estando dentro da TAG <pre> obedece também a endentação do texto digitado. Dessa forma um trecho de código de fonte por exemplo, é apresentado de melhor forma.
+		obs.: essa tag exibe o texto exatamente como é digitado, inclusive quebrar de linhas, endentação, etc.
+		
+<q> - essa TAG cria citações, e já coloca o texto entre aspas.
+<blockquote> - cria uma citação deslocando o texto um pouco a direita. 
+	obs.: nesta TAG blockquote usar o parâmetro cite:"colocar a url" ajuda mecanismos de busca.
+<abbr> - essa tag cria uma legenda sobre um texto que será visualizada quando posicionar o mouse sobre o texto. A legenda que será apresentada, é informada dentro do parâmetro title.
+	exemplo: <abbr title="Hiper Text Markup Language">HTML</abbr>
+
+
+**** ATALHOS DE TECLADO INTERESSANTES NO VS CODE ****
+
+CTRL + SHIFT + P - é o atalho usado para envelopar um trecho de código
+SHIFT + TAB - ajuste de endentação
+CTRL + ESPAÇO - abre opções em determinados casos. Por exemplo para abrir as opções de um parâmetro.
+
+*** LISTAS ***
+
+ol - cria listas ordenadas. O parâmetro type define de vai ser numérica, de A a Z ou em algarismos romanos. O parâmetro start define a sequencia da ordenação: por exemplo, start="5" a lista começa em 5. Os itens da lista são apresentados utilizando a tag <li>
+
+ul - ol - cria listas não ordenadas. O parâmetro type define o tipo de marcador(circle, disc ou square). Os itens da lista são apresentados utilizando a tag <li>
+
+dl - cria lista de definição
+dt - cria um item(termo) de uma lista de definição
+dd - cria uma descrição para um item(dt) de uma lista de definição
+	Obs.: essas 3 tags são geralmente utilizadas em conjunto.
+
+*** LINKS ***
+
+<a> - cria um link. O parâmetro href="url" define o endereço que irá ser acessado ao clicar no link.
+	- é recomendável que, ao criar um link para um endereço externo, usar o parâmetro target="_blank" - dessa forma o link não vai sobrepro a navegação no site atual, abrindo uma nova aba no navegador.
+	- o parâmetro rel="" possui vários valores que podem ser informados. Para indicar um link externo deve-se usar rel="external"
+	- quando for uma página interna, dentro do esquema de navegação do próprio site usar rel="next" ou rel="prev". Apesar de não ser necessário, também posso informar o parâmetro target="_self" avisando que o link vai abrir na própria aba do navegador.
+	- para criar o link para uma página interna, basta teclar CTRL+ESPAÇO com o cursor posicionado entre as aspas do parâmetro href, que o próprio VSCode irá mostrar a relação das pastas e páginas disponíveis dentro da mesma pasta. Quando o link for para uma pasta que está um nível acima na estrutura de pastas do servidor preciso informar href="../" - nesse momento já vai abrir a relação dos arquivos que estão na pasta que está um nível acima.
+	- IMPORTANTE: o uso do parâmetro rel="" é importante para os mecanismos de busca.
+	
+*** IMAGENS DINÂMICAS ****
+
+IMPORTANTE ---- é preciso observar a questão do tamanho das imagens nos diferentes dispositivos em que o site será visualizado. 
+<picture> - dentro dessa tag, define com a tag <img> a imagem padrão que será carregada ao abrir o site. Porém dependendo do dispositivo ou do tamanho que o usuário usa a janela do navegador, pode ser necessário que seja carregada outra imagem com tamanho menor. Para isso utiliza-se a tag <source:media-type> onde defino uma imagem que será aberta quando o dispositivo tiver um tamanho até uma quantidade de pixels que eu estabelecer. **** DICA **** sem fazer para carregar a imagem da maior para a menor.
+	Exemplo: 
+	<picture>
+        <source media="(max-width: 750px)" srcset="imagens/fotop.png" type="image/png"> *** ESSA LINHA DEFINE O ARQUIVO DE IMAGEM QUE VOU APRESENTAR EM DISPOSITIVOS COM LARGURA MÁXIMA DE 750px 
+        <source media="(max-width: 1050px)" srcset="imagens/fotom.png" type="image/png"> *** ESSA LINHA DEFINE O ARQUIVO DE IMAGEM QUE VOU APRESENTAR EM DISPOSITIVOS COM LARGURA MÁXIMA DE 1050px
+        <img src="imagens/fotog.png" alt="Imagem flexível">  *** ESSA LINHA DEFINE O ARQUIVO DE IMAGEM PADRÃO QUE VOU APRESENTAR EM DISPOSITIVOS COM LARGURA ACIMA DE 1050px
+    </picture>
+	
+**** COLOCANDO ÁUDIO NO SITE ***
+<audio> - utilizar essa tag. Alguns parâmetros interessantes a serem usados são o autoplay(toca automaticamente), controls(mostrar os controles de aúdio), loop(repete ao final do áudio)
+			outro parâmetro necessário é o preload(valor recomendado =metadata)
+			exemplo:
+			
+			<audio preload="metadata" autoplay controls loop>
+				<source src="midia/The Moon Drops - Nathan Moore.mp3" type="audio/mpeg">
+				<source src="midia/The Moon Drops - Nathan Moore.ogg" type="audio/ogg">
+				<source src="midia/The Moon Drops - Nathan Moore.wav" type="audio/wav">
+			</audio>
+
+**** CSS ****
+1 - quando for usar CSS Inline, defino dentro do parâmetro style dentro de cada tag da página, as formatações que quero para cada tag.
+	Exemplo: <h1 style="color: brown;">Capítulo 1</h1>
+
+2 - para usar CSS internamente dentro de cada páginas, uso a tag <style> e dentro da mesma, crio os seletores CSS(nome da tag + {}) para definir a formatação que quero aplicar para cada tag da minha página.
+	Exemplo:
+	<style>
+        body{
+            background-color: burlywood;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 20px;
+        }
+        h1{
+            color: darkblue;
+            background-color: deepskyblue;
+        }
+        h2{
+            color: darkred;
+        }
+        p{
+            text-align: justify;
+        }
+    </style>
+3 - para utilizar CSS externamente, crio um arquivo .CSS e dentro desse crio os seletores CSS definindo a formatação que desejo para cada tag do meu projeto. 
+	Nas páginas do projetos, importo essas formatações utilizado a tag<link>
+	Exemplo: <link rel="stylesheet" href="style.css">
+	
+4 - posso misturar as três formas de utilização de CSS nas minhas páginas. Nesse caso a ordem de precedência que ocorre é:
+	1º - CSS Inline(parâmetro style dentro de cada tag das páginas do projeto)
+	2º - CSS Interno ou Local(tag <style>)
+	3º - CSS Externo(arquivo externo)
