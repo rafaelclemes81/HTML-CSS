@@ -138,3 +138,15 @@ IMPORTANTE ---- é preciso observar a questão do tamanho das imagens nos difere
 	2º - CSS Interno ou Local(tag <style>)
 	3º - CSS Externo(arquivo externo)
 
+5 - para criar um seletor com uma configuração global dentro da CSS inicio o seletor informando "*" ao invés do nome de uma tag específica.
+
+**** CORES EM CSS*****
+
+1ª forma - DEGRADE - usar a tag <backgroud-image> com a função linear-gradient. Posteriormente informo a direção (to right, to left, to top OU to bottom OU AINDA o ângulo que as cores seguirão. Por exemplo 45deg) seguido das cores(posso colocar quantas desejar)
+		Exemplo:  body{
+       			         background-image: linear-gradient(to right, white, blue);
+			      }
+2ª forma - DEGRADE PARTINDO DO CENTRO - para isso segue a mesma lógica, porém utilizo a função radial-gradiente, trocando a direção pelo atributo circle.
+		Exemplo:  body{
+       			         background-image: radial-gradient(circle, white, blue);
+			      }
