@@ -5,6 +5,8 @@ SITES INTERESSANTES:
 ÍCONES, SE EU QUISER CRIAR MEU PRÓPRIO ÍCONE: https://www.favicon.cc/
 GERAR UM ÍCONE A PARTIR DE UMA IMAGEM OU TEXTO: https://favicon.io/
 BAIXAR FOTOS E VÍDEOS GRÁTIS(SEM DIREITOS AUTORAIS)- https://www.pexels.com/pt-br/
+PARA CRIAR PALETA DE CORES, UTILIZANDO CÍRCULO CROMÁTICO - color.adobe.com / wwww.paletton.com / coolors.co
+
 
 TAG'S:
 h1 - título (h2, h3, h4, h5 e h6. Só vai até h6) - trata hierarquia de títulos dentro da página
@@ -135,3 +137,16 @@ IMPORTANTE ---- é preciso observar a questão do tamanho das imagens nos difere
 	1º - CSS Inline(parâmetro style dentro de cada tag das páginas do projeto)
 	2º - CSS Interno ou Local(tag <style>)
 	3º - CSS Externo(arquivo externo)
+
+5 - para criar um seletor com uma configuração global dentro da CSS inicio o seletor informando "*" ao invés do nome de uma tag específica.
+
+**** CORES EM CSS*****
+
+1ª forma - DEGRADE - usar a tag <backgroud-image> com a função linear-gradient. Posteriormente informo a direção (to right, to left, to top OU to bottom OU AINDA o ângulo que as cores seguirão. Por exemplo 45deg) seguido das cores(posso colocar quantas desejar)
+		Exemplo:  body{
+       			         background-image: linear-gradient(to right, white, blue);
+			      }
+2ª forma - DEGRADE PARTINDO DO CENTRO - para isso segue a mesma lógica, porém utilizo a função radial-gradiente, trocando a direção pelo atributo circle.
+		Exemplo:  body{
+       			         background-image: radial-gradient(circle, white, blue);
+			      }
