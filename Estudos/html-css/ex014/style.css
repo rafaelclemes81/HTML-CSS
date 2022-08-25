@@ -1,0 +1,17 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap');
+
+@font-face {
+    font-family: 'Australia';
+    src: url("South Australia.ttf"); /* se precisar incluir mais uma url, caso haja um arquivo.oft por exemplo basta incluir vírgula e mais uma url */
+    font-weight: normal;
+    font-style: normal;
+}
+
+body{
+    font-family: 'Australia', cursive;
+    font-size: 2em;
+    font-weight: normal;
+    font-style: normal;
+}
