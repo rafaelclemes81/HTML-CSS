@@ -187,3 +187,9 @@ obs.: usar 3 famílias de fontes num site.
 			font-style: normal;  /* estilo da fonte, como qualquer outra */
 		}
 			  
+			  
+6 - Capturar fontes de outro site
+	Para isso usar a extensão Fonts Ninja para o google chrome.
+	
+
+	
