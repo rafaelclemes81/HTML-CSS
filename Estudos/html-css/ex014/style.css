@@ -10,8 +10,21 @@
 }
 
 body{
-    font-family: 'Australia', cursive;
-    font-size: 2em;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1em;
     font-weight: normal;
     font-style: normal;
+    text-align: justify;
+}
+
+h1 {
+    text-align: center;
+}
+
+h2 {
+    text-align: left;
+}
+
+p {
+    text-indent: 20px;
 }

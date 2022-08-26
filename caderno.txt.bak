@@ -175,7 +175,7 @@ IMPORTANTE ---- é preciso observar a questão do tamanho das imagens nos difere
 		acessar: fonts.google.com
 		@import - precisa estar fora dos seletores CSS
 
-obs.: usar 3 famílias de fontes num site.
+* Recomendação: usar no máximo 3 famílias de fontes num site.
 
 5 - Fontes externas baixadas
 	Para usar uma fonte baixada, preciso criar uma font-face conforme abaixo:
@@ -187,3 +187,9 @@ obs.: usar 3 famílias de fontes num site.
 			font-style: normal;  /* estilo da fonte, como qualquer outra */
 		}
 			  
+			  
+6 - Capturar fontes de outro site
+	Para isso usar a extensão Fonts Ninja para o google chrome.
+	
+
+	
