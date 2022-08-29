@@ -199,5 +199,13 @@ IMPORTANTE ---- é preciso observar a questão do tamanho das imagens nos difere
 	
 **** ALINHAMENTO DE TEXTOS COM CSS ****
 
+Para alinhar texto em CSS é utilizado a função text-align. Os valores possíveis são center, right, left ou justify.
+Uma outra função interessante é text-indent. Ela server para aplicar um récuo no texto de alguma tag.
+
+**** SELETORES PERSONALIZADOS ****
+
+
+
+
 
 	
