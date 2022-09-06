@@ -222,6 +222,18 @@ Uma outra função interessante é text-indent. Ela server para aplicar um récu
 
 2 - UTILIZANDO CLASS
 	Quanto preciso que duas tags tenham a mesma formatação dentro do mesmo documento vou utilizar uma class.
+	Exemplo:
+			Em HTML
+				<h1 class="principal">Título </h1>
+			Em CSS
+				.principal {
+					background-color: white;
+				}
+				
+**** MACETE PARA CENTRALIZAR UM VÍDEO INCORPORADO DO YOUTUBE/VIMEO ****
+1 - Primeiramente envelopar o código incorporado em uma div. Posteriormente, caso eu vá ter vários vídeos dentro da minha página, utilizo uma class para poder definir as formatações para essa div dentro do CSS
+	
+
 
 
 		

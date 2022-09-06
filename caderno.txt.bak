@@ -203,20 +203,27 @@ Para alinhar texto em CSS é utilizado a função text-align. Os valores possív
 Uma outra função interessante é text-indent. Ela server para aplicar um récuo no texto de alguma tag.
 
 **** SELETORES PERSONALIZADOS ****
+1 - UTILIZANDO ID
+	Seletores personalizados eu represento colocando tag + id="nomeparaoid". Exemplo: <h1 id="principal">Título </h1>
+	Posteriormente em CSS utilizo # + o nome do identificador que utilizei no HTML.
+		Exemplo: h1#principal {
+					background-color: white;
+				}
+	Obs.: na CSS posso criar o id(#) de forma que possa utilizar em qualquer tag.
+		Exemplo:
+			Em HTML
+				<h1 id="principal">Título </h1>
+			Em CSS
+				#principal {
+					background-color: white;
+				}
 
-Seletores personalizados eu represento colocando tag + id="nomeparaoid". Exemplo: <h1 id="principal">Título </h1>
-Posteriormente em CSS utilizo # + o nome do identificador que utilizei no HTML.
-	Exemplo: h1#principal {
-				background-color: white;
-			}
-Obs.: na CSS posso criar o id(#) de forma que possa utilizar em qualquer tag.
-	Exemplo:
-		Em HTML
-			<h1 id="principal">Título </h1>
-		Em CSS
-			#principal {
-				background-color: white;
-			}
+	Recomendação: não usar o mesmo id em mais de um elemento(tag) dentro do mesmo documento.
+
+2 - UTILIZANDO CLASS
+	Quanto preciso que duas tags tenham a mesma formatação dentro do mesmo documento vou utilizar uma class.
+
+
 		
 		
 	
