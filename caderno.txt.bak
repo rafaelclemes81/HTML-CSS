@@ -204,8 +204,19 @@ Uma outra função interessante é text-indent. Ela server para aplicar um récu
 
 **** SELETORES PERSONALIZADOS ****
 
-
-
-
-
+Seletores personalizados eu represento colocando tag + id="nomeparaoid". Exemplo: <h1 id="principal">Título </h1>
+Posteriormente em CSS utilizo # + o nome do identificador que utilizei no HTML.
+	Exemplo: h1#principal {
+				background-color: white;
+			}
+Obs.: na CSS posso criar o id(#) de forma que possa utilizar em qualquer tag.
+	Exemplo:
+		Em HTML
+			<h1 id="principal">Título </h1>
+		Em CSS
+			#principal {
+				background-color: white;
+			}
+		
+		
 	
