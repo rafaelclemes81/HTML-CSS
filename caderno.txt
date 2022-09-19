@@ -236,7 +236,9 @@ Uma outra função interessante é text-indent. Ela server para aplicar um récu
 **** IMAGENS DE FUNDO ****
 
 - para colocar uma imagem de fundo vou utilizar background-image: url("caminho do arquivo")
-	para redefinir o tamanho que a imagem será exibida vou utilizar background-size: 100px 100 px; por exemplo
+	para redefinir o tamanho que a imagem será exibida vou utilizar background-size: 100px 100 px ou 100% por exemplo; por exemplo.
+		o parâmetro contain para o background-size, vai garantir que 100% da imagem seja exibida quando a tela aumentar ou diminuir. Porém quando diminuir altura ou largura, barras serão criadas ao lado das imagens, ou encima e embaixo. Esse parâmetro não corta a imagem, por isso as barras podem aparecer.
+		o parâmetro cover para o background-size vai cobrir toda a área do navegador com a imagem, porém poderá não exibir a imagem completa, dependendo do tamanho da janela do navegador. A imagem será totalmente exibida quando houve o espaço necessário na janela igual ou maior que o tamanho da imagem
 	para definir a forma de repetição utilizo background-repeat: no-repeat por exemplo vai exibir apenas uma vez. Existem várias formas de repetição.
 	para posicionar vou utilizar background-position: left top; por exemplo. Existem vários outros atribuidos que posso utilizar para posicionar (left, bottom, right top, right bottom, center center, etc - Importando que informarei a posição seguindo a ordem "coluna linha"). A posição informada, define um ponto de ancoragem para a imagem em relação a área de visualização do navagador.
 	
