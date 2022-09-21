@@ -243,7 +243,8 @@ Uma outra função interessante é text-indent. Ela server para aplicar um récu
 	para posicionar vou utilizar background-position: left top; por exemplo. Existem vários outros atribuidos que posso utilizar para posicionar (left, bottom, right top, right bottom, center center, etc - Importando que informarei a posição seguindo a ordem "coluna linha"). A posição informada, define um ponto de ancoragem para a imagem em relação a área de visualização do navagador.
 	para que a imagem acompanhe o conteúdo vou utilizar o background-attachment. nessa função, o parâmetro scroll, faz a imagem acompanhar o conteúdo durante a rolagem. O parâmetro fixed, fixa a imagem de fundo na área visível do navegador e rola apenas o conteúdo. Ou seja com o parâmetro fixed a imagem fica fixa.
 	
-	*** SHORTHAND USAR ESSA SEQUENCIA DE PARÂMETROS *** background: color image position repeat size attachment;
+	*** SHORTHAND USAR ESSA SEQUENCIA DE PARÂMETROS *** background: color image position repeat attachment;
+		Obs.: sobre a shorthand "background", é importante atentar que apesar da documentação da W3C dizer que é possível informar o size depois do parâmetro repeat, na prática isso não funciona. Ou seja, o background-size precisa ser informado fora da shorthand.
 
 
 
