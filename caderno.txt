@@ -278,5 +278,60 @@ Uma outra função interessante é text-indent. Ela server para aplicar um récu
 		text-align: center; /* alinhamento horizontal */
         vertical-align: bottom; /* alinhamento vertical - alinhamento vertical, não uso center, mas sim middle */
 
+	*** ANATOMIA DE TABELAS GRANDES
+		CAPTION /* ESSA TAG SÓ ACEITA UM TEXTO, QUE SERÁ A LEGENDA DA TABELA.
+		TABLE
+			THEAD /* CABEÇALHO DA TABELAS
+				TR, TD, TH
+			TBODY /* CORPO DA TABELA
+				TR, TD, TH
+			TFOOT /* RODAPÉ DA TABELA
+				TR, TD, TH
+				
+			*** não é uma regra que uma tabela grande tenha os três elementos
+	*** ESCOPO DA TAG <TH>
+		Uma TH identifica um identificador para a coluna ou linha da tabela. Para isso preciso identificar qual escopo de todas as TH. O escopo de uma TH pode ser "col" quando define um identificar para uma coluna, ou "row" quando define um identificador para uma linha.
+		
+	*** EFEITO ZEBRADO ***
+		Para isso no CSS vou utilizar a pseudoclasse  nth-child(2m). Dessa forma, de duas em duas linhas vai ser aplicada a formação que eu defini dentro do seletor em questão.
+		
+		Exemplos:
+			*** pulando de duas em duas linhas ***
+				tbody > tr:nth-child(2m) {
+					background-color: lightgray;
+				}
 			
-
+			*** aplicando a formatação nas linhas ímpares(odd) ****
+			
+				tbody tr:nth-child(odd) {
+					background-color: lightgray;
+				}
+				
+			*** aplicando a formatação nas linhas pares(even) ***
+			
+				tbody tr:nth-child(even) {
+					background-color: gray;
+				}
+				
+				Obs.: posso utilizar as duas juntas (ímpares e pares), dessa forma consigo aplicar uma cor para as linhas ímpares e outra cor para as linhas pares.
+				
+	**** CABEÇALHO FIXO DURANTE A ROLAGEM DE TABELAS GRANDES **** 
+		Passo 1: no seletor table do CSS, defino a position: relative;
+		Passo 2: no seletor que identifica o título de cada coluna, defino position: sticky. Porém, isso vai fixar durante a rolagem, apenas o texto que está na tag th. Para dar o efeito desejado, aplico a mesma background-color que foi definido o thead. Feito isso, ao rolar uma tabela para os valores mais próximos do final, apesar do título das colunas ter se fixado, fica uma pequena linha em branco, o que visualmente não fica pegar. Para corrigir esse problema defino top: -1px;
+		
+		Exemplo: 
+			thead > tr > th {
+				position: sticky;
+				top: -1px;
+				background-color: rgb(39, 38, 38); /* essa cor é a mesma que está definida no seletor thead, nesse caso.
+			}
+			
+		Obs.: essa técnica, em relação aos outros elementos da página, funciona enquanto a rolagem está com a tabela sendo visualizada, quando chega ao fim da tabela, o cabeçalho pára de aparecer juntamente com a tabela.
+		
+	**** MESCLAGEM DE CELULAS DE UMA TABELA EM HTML **** 
+		A mesclagem de célular é feita no HTML, colocando o parâmetro colspan="2" na tag <td>. Colspan mescla horizontalmente, enquanto rowspan, mescla células verticalmente.
+		
+		Exemplo de sintaxe de colspan: <td colspan="2">B</td>
+		
+		Exemplo de sintaxe de rowspan: <td rowspan="3">F</td>
+			
