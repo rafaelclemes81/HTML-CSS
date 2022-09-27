@@ -1,7 +1,6 @@
 ANOTAÇÕES CURSO DE HTML/CSS
 
 SITES INTERESSANTES:
-ÍCONES PRONTOS PARA BAIXAR: https://iconarchive.com/
 ÍCONES, SE EU QUISER CRIAR MEU PRÓPRIO ÍCONE: https://www.favicon.cc/
 GERAR UM ÍCONE A PARTIR DE UMA IMAGEM OU TEXTO: https://favicon.io/
 BAIXAR FOTOS E VÍDEOS GRÁTIS(SEM DIREITOS AUTORAIS)- https://www.pexels.com/pt-br/
@@ -263,9 +262,21 @@ Uma outra função interessante é text-indent. Ela server para aplicar um récu
 
             transform: translate(-50%, -50%);
 		
-	
-	
+**** UTILIZANDO TABELAS EM HTML/CSS ****
 
-		
-		
+1º DICA IMPORTANTE: NÃO UTILIZAR TABELAS PARA DEFINIR A ESTRUTURA DO SITE
+
+	*** HIERARQUIA EM TABELAS SIMPLES ***
+		<table> /* define o início da tabela
+			<tr> /* define uma linha da tabela
+				<th></th> /* cabeçalho da linha
+				<td></td> /* dado da linha
+			</tr>
+		</table>
 	
+	*** ALINHAMENTO EM TABELAS COM CSS ***
+		text-align: center; /* alinhamento horizontal */
+        vertical-align: bottom; /* alinhamento vertical - alinhamento vertical, não uso center, mas sim middle */
+
+			
+

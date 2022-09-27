@@ -1,7 +1,6 @@
 ANOTAÇÕES CURSO DE HTML/CSS
 
 SITES INTERESSANTES:
-ÍCONES PRONTOS PARA BAIXAR: https://iconarchive.com/
 ÍCONES, SE EU QUISER CRIAR MEU PRÓPRIO ÍCONE: https://www.favicon.cc/
 GERAR UM ÍCONE A PARTIR DE UMA IMAGEM OU TEXTO: https://favicon.io/
 BAIXAR FOTOS E VÍDEOS GRÁTIS(SEM DIREITOS AUTORAIS)- https://www.pexels.com/pt-br/
@@ -246,8 +245,38 @@ Uma outra função interessante é text-indent. Ela server para aplicar um récu
 	*** SHORTHAND USAR ESSA SEQUENCIA DE PARÂMETROS *** background: color image position repeat attachment;
 		Obs.: sobre a shorthand "background", é importante atentar que apesar da documentação da W3C dizer que é possível informar o size depois do parâmetro repeat, na prática isso não funciona. Ou seja, o background-size precisa ser informado fora da shorthand.
 
-
-
+	*** CENTRALIZAÇÃO VERTICAL DE CAIXAS ***
+		para centralizar uma caixa verticalmente, preciso colocar a propriedade position com o parâmetro relative na caixa onde vou inserir uma segunda caixa, para a qual vou utilizar a propriedade position com parâmetro absolute. Uma caixa com position: absolute me permite que eu possa alterar as propriedades left, right, top e bottom. A partir dessa possibilidade vou alterando os valores, tanto em percentual ou em pixels, juntamente com a propriedade transform: translate até conseguir centralizar verticalmente determinada caixa.
 		
+		Exemplo real para seguir como base para centralizar uma caixa dentro de outra:
 		
+            background-image: url("imagens/target001.png");
+            background-size: 100% 100%;
+            position: absolute;
+            height: 200px;
+            width: 400px;
+            background-color: yellow;
+
+            left: 50%;
+            top: 50%;
+
+            transform: translate(-50%, -50%);
+		
+**** UTILIZANDO TABELAS EM HTML/CSS ****
+
+1º DICA IMPORTANTE: NÃO UTILIZAR TABELAS PARA DEFINIR A ESTRUTURA DO SITE
+
+	*** HIERARQUIA EM TABELAS ***
+		<table> /* define o início da tabela
+			<tr> /* define uma linha da tabela
+				<th></th> /* cabeçalho da linha
+				<td></td> /* dado da linha
+			</tr>
+		</table>
 	
+	*** ALINHAMENTO EM TABELAS COM CSS ***
+		text-align: center; /* alinhamento horizontal */
+        vertical-align: bottom; /* alinhamento vertical - alinhamento vertical, não uso center, mas sim middle */
+
+			
+
