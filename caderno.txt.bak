@@ -328,5 +328,10 @@ Uma outra função interessante é text-indent. Ela server para aplicar um récu
 			
 		Obs.: essa técnica, em relação aos outros elementos da página, funciona enquanto a rolagem está com a tabela sendo visualizada, quando chega ao fim da tabela, o cabeçalho pára de aparecer juntamente com a tabela.
 		
+	**** MESCLAGEM DE CELULAS DE UMA TABELA EM HTML **** 
+		A mesclagem de célular é feita no HTML, colocando o parâmetro colspan="2" na tag <td>. Colspan mescla horizontalmente, enquanto rowspan, mescla células verticalmente.
 		
-
+		Exemplo de sintaxe de colspan: <td colspan="2">B</td>
+		
+		Exemplo de sintaxe de rowspan: <td rowspan="3">F</td>
+			
