@@ -292,6 +292,8 @@ Uma outra função interessante é text-indent. Ela server para aplicar um récu
 	*** ESCOPO DA TAG <TH>
 		Uma TH identifica um identificador para a coluna ou linha da tabela. Para isso preciso identificar qual escopo de todas as TH. O escopo de uma TH pode ser "col" quando define um identificar para uma coluna, ou "row" quando define um identificador para uma linha.
 		
+		obs: só existe escopo em TH
+		
 	*** EFEITO ZEBRADO ***
 		Para isso no CSS vou utilizar a pseudoclasse  nth-child(2m). Dessa forma, de duas em duas linhas vai ser aplicada a formação que eu defini dentro do seletor em questão.
 		
@@ -334,4 +336,18 @@ Uma outra função interessante é text-indent. Ela server para aplicar um récu
 		Exemplo de sintaxe de colspan: <td colspan="2">B</td>
 		
 		Exemplo de sintaxe de rowspan: <td rowspan="3">F</td>
-			
+	
+	**** TABELAS RESPONSIVAS ****
+		
+		Se tenho uma tabela com muitas colunas, vai acabar criando uma rolagem no eixo X da página. E isso atrapalha a leitura do conteúdo. Principalmente em telas menores, como de celular por exemplo.
+		Para solucionar, e fazer com que a rolagem aconteça apenas dentro da tabela, devo envelopar a tabela<table> completa dentro de uma <div>. Posteriormente posso criar uma classe ou um id para essa div.
+		Na CSS, para o seletor div#id ou div.class que eu criar, vou informar uma propriedade chamada overflow-x: auto.
+		Dessa forma, a rolagem que gerou devido ao número excessivo de colunas, vai ficar restrita aos dados da tabela. 
+		
+		Sintaxe:
+		
+		div#container {
+			overflow-x: auto;
+		}
+		
+		No caso do exemplo, container é o nome do id que criei para a div.

@@ -351,3 +351,7 @@ Uma outra função interessante é text-indent. Ela server para aplicar um récu
 		}
 		
 		No caso do exemplo, container é o nome do id que criei para a div.
+	
+	***** IFRAMES ****
+		Um iframe tem o tamanho padrão de 300x150px. Mas posso aumentar como quiser.
+		
