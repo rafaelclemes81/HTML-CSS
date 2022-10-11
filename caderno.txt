@@ -355,3 +355,8 @@ Uma outra função interessante é text-indent. Ela server para aplicar um récu
 	***** IFRAMES ****
 		Um iframe tem o tamanho padrão de 300x150px. Mas posso aumentar como quiser.
 		
+		**** INCOVENIENTES DO IFRAME ****
+			1 - Problemas em relação aos mecanismos de busca: segundo o google, os bots de indexação que localizam os conteúdos nos sites podem não reconhecer conteúdo colocar dentro de iframe. Sendo assim, é bom, evitar colocar conteúdo muito sensível ao site em iframes.
+			
+			2 - Conteúdo em iframe apresentam problemas 
+			
