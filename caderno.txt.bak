@@ -365,3 +365,18 @@ Uma outra função interessante é text-indent. Ela server para aplicar um récu
 			Método padrão do form, quando não informo nada, é o GET.
 			No método GET, as informações enviadas pelo formulário ficam visíveis na url do formulário.
 			o método POST oculta essas informações na URL, porém não é um método seguro, porque é possível acessar as informações digitadas pelo DevTools / Network/ Headers
+			
+			Quando usar um ou outro: quando forem dados não sensíveis(sigilosos) podemos utilizar  o GET. Quando forem dados que tenham informações que são particulares e não compartilháveis, usar o método POST.
+			
+			Método GET só aceita 3000 bytes. E também não aceita envio de fotos.
+			
+			Quando passa de 3000 bytes ou existe envio de arquivos, usar o POST.
+			
+		3 - O atributo required na tag input, torna o preenchimento do campo obrigatório.
+			Para definir um tamanho obrigatório para um campo do forumlário utiliza-se os atributor minlength e maxlength para definir o mínimo e o máximo de caracteres.
+			Tamanho da caixa de um formulário se altera com o atributo size.
+			Inicializar o texto de um campo de um formulário, utiliza-se o atributo placeholder. Exemplo: placeholder="nome de usuário" < -- Dessa forma a caixa já fica com o texto "nome de usuário" enquanto não se clica nela para começar a digitar algo.
+			
+		
+			
+			

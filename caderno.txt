@@ -372,4 +372,13 @@ Uma outra função interessante é text-indent. Ela server para aplicar um récu
 			
 			Quando passa de 3000 bytes ou existe envio de arquivos, usar o POST.
 			
+		3 - O atributo required na tag input, torna o preenchimento do campo obrigatório.
+			Para definir um tamanho obrigatório para um campo do forumlário utiliza-se os atributor minlength e maxlength para definir o mínimo e o máximo de caracteres.
+			Tamanho da caixa de um formulário se altera com o atributo size.
+			Inicializar o texto de um campo de um formulário, utiliza-se o atributo placeholder. Exemplo: placeholder="nome de usuário" < -- Dessa forma a caixa já fica com o texto "nome de usuário" enquanto não se clica nela para começar a digitar algo.
+			Para desligar a sugestão de valores já digitados nos campos de um formulário, usa-se o atributo autocomplete="off". Na TAG form esse atributo aceita apenas os valores on e off. 
+			Para que no campo seja sugerido um valor que corresponda ao que se deseja no formulário coloca-se o autocomplete na tag input. E daí existem vários valores que pode ser usados. Exemplo: autocomplete="username" <--Esse exemplo, sugere os nomes de usuário que o navegador já possui registrados como usuários já informados anteriormente.
+			
+		
+			
 			
