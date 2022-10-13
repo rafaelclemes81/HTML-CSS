@@ -357,6 +357,19 @@ Uma outra função interessante é text-indent. Ela server para aplicar um récu
 		
 		**** INCOVENIENTES DO IFRAME ****
 			1 - Problemas em relação aos mecanismos de busca: segundo o google, os bots de indexação que localizam os conteúdos nos sites podem não reconhecer conteúdo colocar dentro de iframe. Sendo assim, é bom, evitar colocar conteúdo muito sensível ao site em iframes.
+	
+	**** FORMULÁRIOS ****
+		1 - Todo label precisa ser relacionado a um campo do formulário(input).
+		
+		2 - Métodos de envio de formulários são informados no atributo method e podem ser GET e POST.
+			Método padrão do form, quando não informo nada, é o GET.
+			No método GET, as informações enviadas pelo formulário ficam visíveis na url do formulário.
+			o método POST oculta essas informações na URL, porém não é um método seguro, porque é possível acessar as informações digitadas pelo DevTools / Network/ Headers
 			
-			2 - Conteúdo em iframe apresentam problemas 
+			Quando usar um ou outro: quando forem dados não sensíveis(sigilosos) podemos utilizar  o GET. Quando forem dados que tenham informações que são particulares e não compartilháveis, usar o método POST.
+			
+			Método GET só aceita 3000 bytes. E também não aceita envio de fotos.
+			
+			Quando passa de 3000 bytes ou existe envio de arquivos, usar o POST.
+			
 			
