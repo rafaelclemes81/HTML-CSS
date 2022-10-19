@@ -380,6 +380,12 @@ Uma outra função interessante é text-indent. Ela server para aplicar um récu
 			Para que no campo seja sugerido um valor que corresponda ao que se deseja no formulário coloca-se o autocomplete na tag input. E daí existem vários valores que pode ser usados. Exemplo: autocomplete="username" <--Esse exemplo, sugere os nomes de usuário que o navegador já possui registrados como usuários já informados anteriormente.
 			Para aceitar somente números utilizar o type="number". Para números decimais adicionar o atributo step="0.01" ou "0.5" dependendo de como os decimais vão variar
 			o Atributo value atribui um valor ao campo do form e sobrepõe o placeholder.
+		4 - Para agrupar inputs em um formulário vou utilizar as tags fieldset. Dentro da fieldset uso a tag lagend para identificar do que se trata o grupo.
+		5 - em um input do tipo radio, para que me deixe selecionar apenas uma opção, preciso colocar todas as propriedades "name" nas opções informadas dentro das tags input com o mesmo nome. Por exemplo num radiobox para selecionar o gênero (masculino/feminino) coloco os dois inputs com o name=genero.
+		6 - Tanto em checkbox, quanto em radio button, se quiser deixar uma ou mais opções já pré-selecionadas, basta informar a propriedade checked dentro dos inputs.
+		7 - O input do tipo color, cria uma caixa que permite selecionar uma cor.
+		8 - O input do tipo range, cria uma "barra de medição". Pode ser utilizado as propriedades min, max para definir o valor mínimo e o valor máximo. Para definir em que valor a barra vai ser inicializada, informo na propriedade value.
+		9 - O input do tipo file, criar o botão para seleção de um arquivo. Obs. importante, quando se utiliza esse tipo de input, o método do formulário tem que ser POST, não pode ser GET.
 			
 		
 			

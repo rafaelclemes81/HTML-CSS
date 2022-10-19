@@ -378,6 +378,11 @@ Uma outra função interessante é text-indent. Ela server para aplicar um récu
 			Inicializar o texto de um campo de um formulário, utiliza-se o atributo placeholder. Exemplo: placeholder="nome de usuário" < -- Dessa forma a caixa já fica com o texto "nome de usuário" enquanto não se clica nela para começar a digitar algo.
 			Para desligar a sugestão de valores já digitados nos campos de um formulário, usa-se o atributo autocomplete="off". Na TAG form esse atributo aceita apenas os valores on e off. 
 			Para que no campo seja sugerido um valor que corresponda ao que se deseja no formulário coloca-se o autocomplete na tag input. E daí existem vários valores que pode ser usados. Exemplo: autocomplete="username" <--Esse exemplo, sugere os nomes de usuário que o navegador já possui registrados como usuários já informados anteriormente.
+			Para aceitar somente números utilizar o type="number". Para números decimais adicionar o atributo step="0.01" ou "0.5" dependendo de como os decimais vão variar
+			o Atributo value atribui um valor ao campo do form e sobrepõe o placeholder.
+		4 - Para agrupar inputs em um formulário vou utilizar as tags fieldset. Dentro da fieldset uso a tag lagend para identificar do que se trata o grupo.
+		5 - em um input do tipo radio, para que me deixe selecionar apenas uma opção, preciso colocar todas as propriedades "name" nas opções informadas dentro das tags input com o mesmo nome. Por exemplo num radiobox para selecionar o gênero (masculino/feminino) coloco os dois inputs com o name=genero.
+		6 - Tanto em checkbox, quanto em radio button, se quiser deixar uma ou mais opções já pré-selecionadas, basta informar a propriedade checked dentro dos inputs.
 			
 		
 			
