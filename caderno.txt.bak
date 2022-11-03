@@ -197,8 +197,6 @@ IMPORTANTE ---- é preciso observar a questão do tamanho das imagens nos difere
 	https://www.myfonts.com/
 	
 **** ALINHAMENTO DE TEXTOS COM CSS ****
-
-Para alinhar texto em CSS é utilizado a função text-align. Os valores possíveis são center, right, left ou justify.
 Uma outra função interessante é text-indent. Ela server para aplicar um récuo no texto de alguma tag.
 
 **** SELETORES PERSONALIZADOS ****
@@ -383,7 +381,10 @@ Uma outra função interessante é text-indent. Ela server para aplicar um récu
 		4 - Para agrupar inputs em um formulário vou utilizar as tags fieldset. Dentro da fieldset uso a tag lagend para identificar do que se trata o grupo.
 		5 - em um input do tipo radio, para que me deixe selecionar apenas uma opção, preciso colocar todas as propriedades "name" nas opções informadas dentro das tags input com o mesmo nome. Por exemplo num radiobox para selecionar o gênero (masculino/feminino) coloco os dois inputs com o name=genero.
 		6 - Tanto em checkbox, quanto em radio button, se quiser deixar uma ou mais opções já pré-selecionadas, basta informar a propriedade checked dentro dos inputs.
-			
-		
-			
-			
+		7 - O input do tipo color, cria uma caixa que permite selecionar uma cor.
+		8 - O input do tipo range, cria uma "barra de medição". Pode ser utilizado as propriedades min, max para definir o valor mínimo e o valor máximo. Para definir em que valor a barra vai ser inicializada, informo na propriedade value.
+		9 - O input do tipo file, criar o botão para seleção de um arquivo. Obs. importante, quando se utiliza esse tipo de input, o método do formulário tem que ser POST, não pode ser GET.
+	
+	**** MEDIA QUERIES/QUERY *****
+	
+		Para utilizar media queries, devo criar um CSS para cada situação, como para exibição na tela(screen) ou impressora(print). Isso é definino dentro do link para css inserindo o parâmetro media="screen", "print" ou "all".

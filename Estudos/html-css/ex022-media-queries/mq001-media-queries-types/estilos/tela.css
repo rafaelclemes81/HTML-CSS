@@ -25,7 +25,7 @@ header > h1 {
 }
 
 menu ul {
-    list-style-type: nome;
+    list-style-type: none;
     background-color: rgb(43, 42, 42);
 }
 

@@ -197,8 +197,6 @@ IMPORTANTE ---- é preciso observar a questão do tamanho das imagens nos difere
 	https://www.myfonts.com/
 	
 **** ALINHAMENTO DE TEXTOS COM CSS ****
-
-Para alinhar texto em CSS é utilizado a função text-align. Os valores possíveis são center, right, left ou justify.
 Uma outra função interessante é text-indent. Ela server para aplicar um récuo no texto de alguma tag.
 
 **** SELETORES PERSONALIZADOS ****
@@ -386,7 +384,9 @@ Uma outra função interessante é text-indent. Ela server para aplicar um récu
 		7 - O input do tipo color, cria uma caixa que permite selecionar uma cor.
 		8 - O input do tipo range, cria uma "barra de medição". Pode ser utilizado as propriedades min, max para definir o valor mínimo e o valor máximo. Para definir em que valor a barra vai ser inicializada, informo na propriedade value.
 		9 - O input do tipo file, criar o botão para seleção de um arquivo. Obs. importante, quando se utiliza esse tipo de input, o método do formulário tem que ser POST, não pode ser GET.
-			
+	
+	**** MEDIA QUERIES/QUERY *****
+	
+		Para utilizar media queries, devo criar um CSS para cada situação, como para exibição na tela(screen) ou impressora(print). Isso é definino dentro do link para css inserindo o parâmetro media="screen", "print" ou "all".
 		
-			
-			
+		É importante entender que "screen" "print" e "all" referem-se as media types. Existem também as media features que são declaradas juntamente com a media, dessa forma: Exemplo: media="screen and (orientation: portrait ou orientation: landscape). Nesse caso estou criando um estilo para a exibição em tela com orientação retrato ou paisagem.
